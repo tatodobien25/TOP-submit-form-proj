@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+main {
+    height: 100%;
+}
+
+p {}
+
+h1 {
+    border: 1px dotted #888;
+}
+
+.flex-container {
+    display: flex;
+}
+
+#hero-side-section {
+    flex-direction: column;
+    background-image: url(./mohammadreza-alidoost-joQdhwKZlJE-unsplash.jpg);
+    font-family: 'Yellowtail', cursive;
+    flex: 1 1 auto;
+}
+
+form {
+    border: 1px dotted #f11;
+}
+
+#form-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.form-row {}
