@@ -1,9 +1,12 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
 }
 
 .flex-container {
@@ -72,33 +75,66 @@ main {
     justify-content: space-evenly;
     align-items: center;
     flex-basis: 60vw;
-    background: linear-gradient(to top, #008, #444);
+    background: rgba(94, 9, 84, 0.4)
+}
+
+p {
+    font-size: 1.1rem;
 }
 
 form {
     flex-direction: column;
-    padding: 0 auto;
     width: 600px;
 }
 
 label {
     /* Uniform size & alignment */
     display: inline-block;
-    width: 100px;
-    text-align: right;
-    font-size: 0.8rem;
+    width: 40%;
+    font-size: 1.05rem;
+    height: 40%;
+
 }
 
-input,
-textarea {
+input {
     /* To make sure that all text fields have the same font settings
      By default, textareas have a monospace font */
     font: 0.85em sans-serif;
 
     /* Uniform text field size */
-    width: 200px;
-    box-sizing: border-box;
+    width: 40%;
+    height: 40%;
 
     /* Match form field borders */
     border: 1px solid #999;
+}
+
+input:focus {
+    border: 2px solid black;
+    box-shadow: 2px 2px navy;
+    background-color: rgba(0, 255, 255, 0.3)
+}
+
+input:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.form-row {
+    display: flex;
+    height: 80px;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+button {
+    background: rgba(135, 25, 100, 0.9);
+    font-weight: bolder;
+    font-size: large;
+    color: plum;
+    border-radius: 5px;
+    border: 2px solid white;
+
 }
