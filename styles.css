@@ -109,14 +109,14 @@ input {
     border: 1px solid #999;
 }
 
+input:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
 input:focus {
     border: 2px solid black;
     box-shadow: 2px 2px navy;
-    background-color: rgba(0, 255, 255, 0.3)
-}
-
-input:hover {
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(0, 255, 255, 0.15)
 }
 
 .form-row {
@@ -127,8 +127,6 @@ input:hover {
     justify-content: space-around;
 }
 
-
-
 button {
     background: rgba(135, 25, 100, 0.9);
     font-weight: bolder;
@@ -136,5 +134,6 @@ button {
     color: plum;
     border-radius: 5px;
     border: 2px solid white;
-
+    margin-top: 20px;
+    padding: 10px;
 }
